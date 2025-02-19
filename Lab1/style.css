@@ -1,0 +1,13 @@
+.box {
+    background-color: rgb(13, 11, 107);
+    width: 300px;
+    border: 15px solid rgb(61, 19, 70);
+    padding: 50px;
+    margin: 20px;
+    color: rgb(235, 186, 194);
+    
+  }
+
+.box h2{
+    text-align: center;
+}
