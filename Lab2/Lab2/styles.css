@@ -19,7 +19,6 @@
 	list-style-type: none;
 	padding:0;
 	margin:0;
-	/* font-weight: ; */
 }
 
 #flex-section2 li {
@@ -44,11 +43,17 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #flex-section3 .tags ul {
-
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	flex-flow: wrap;
 }
 
 /* end Flexbox Part 3 */
