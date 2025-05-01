@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f0ff;
+  color: #333;
+}
+  
+header {
+  background-color: #b781e7;
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+}
+  
+header h1 {
+  margin: 0;
+}
+  
+header a {
+  color: #fff;
+  text-decoration: underline;
+}
+  
+.controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+}
+  
+.controls label {
+  font-weight: bold;
+}
+  
+select, button {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+  
+button {
+  background-color: #e1bee7;
+  border: none;
+  cursor: pointer;
+}
+  
+button:hover {
+  background-color: #bf76cc;
+}
+  
+#dashboard {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+  
+.day-data {
+  margin-bottom: 2rem;
+}
+  
+.day-data h2 {
+  color: #ba68c8;
+  text-align: center;
+}
+  
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  background-color: #d5b5da;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+  
+.item {
+  background: #fce4ec;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+  
+.error {
+  color: #b71c1c;
+  background: #ffcdd2;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+}
+  
+.hidden {
+  display: none;
+}

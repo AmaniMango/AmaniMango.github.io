@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Parks Sunrise & Sunset</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>☀️Sunrise & Sunset Dashboard🌙</h1>
+    <!-- API credit link -->
+    <p>Powered by <a href="https://sunrisesunset.io/api/" target="_blank">Sunrise Sunset API</a></p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label for="location">Choose a park:</label>
+      <select id="location">
+        <!-- Global park options -->
+        <option value="41.8826,-87.6226">Millennium Park, Chicago, USA</option>
+        <option value="35.6586,139.7454">Shiba Park, Tokyo, Japan</option>
+        <option value="48.8584,2.2945">Champ de Mars, Paris, France</option>
+        <option value="51.5079,-0.1657">Hyde Park, London, UK</option>
+        <option value="-33.8731,151.2110">The Royal Botanic Garden, Sydney, Australia</option>
+        <option value="55.7517,37.6176">Gorky Park, Moscow, Russia</option>
+        <option value="40.7829,-73.9654">Central Park, New York, USA</option>
+        <option value="19.4326,-99.1332">Chapultepec Park, Mexico City, Mexico</option>
+        <option value="52.3702,4.8952">Vondelpark, Amsterdam, Netherlands</option>
+        <option value="-23.5505,-46.6333">Ibirapuera Park, São Paulo, Brazil</option>
+      </select>
+      <button id="getData">Get Data</button>
+    </section>
+        <!--Today data displayed-->
+    <section id="dashboard">
+      <div class="day-data" id="today">
+        <h2>Today</h2>
+        <div class="grid">
+          <div class="item" id="today-sunrise">Sunrise: --</div>
+          <div class="item" id="today-sunset">Sunset: --</div>
+          <div class="item" id="today-dawn">Dawn: --</div>
+          <div class="item" id="today-dusk">Dusk: --</div>
+          <div class="item" id="today-day_length">Day Length: --</div>
+          <div class="item" id="today-solar_noon">Solar Noon: --</div>
+          <div class="item" id="today-timezone">Time Zone: --</div>
+        </div>
+      </div>
+      <!-- Tomorrow Data Displayed -->
+      <div class="day-data" id="tomorrow">
+        <h2>Tomorrow</h2>
+        <div class="grid">
+          <div class="item" id="tomorrow-sunrise">Sunrise: --</div>
+          <div class="item" id="tomorrow-sunset">Sunset: --</div>
+          <div class="item" id="tomorrow-dawn">Dawn: --</div>
+          <div class="item" id="tomorrow-dusk">Dusk: --</div>
+          <div class="item" id="tomorrow-day_length">Day Length: --</div>
+          <div class="item" id="tomorrow-solar_noon">Solar Noon: --</div>
+          <div class="item" id="tomorrow-timezone">Time Zone: --</div>
+        </div>
+      </div>
+      <div id="error" class="error hidden">Error fetching data. Please try again.</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
